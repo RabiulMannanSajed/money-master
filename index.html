@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving Account</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h2 class="text-center mt-5 title-text">Saving</h2>
+    <!-- div of image start-->
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pin-generator half-width">
+                    <img class="money-img" src="money img.jpg" alt="">
+                </div>
+            </div>
+            <!-- div of image end-->
+
+
+            <div class="col-md-6 info-div">
+                <!-- income part -->
+                <div class="input-section half-width">
+                    <div>
+                        <h4 class="text-center p-2">Income</h4>
+                        <label for="">Income: <input id="income-amount" type="text" class="input-btn">
+                        </label>
+
+                        <!-- notification part start-->
+                        <div>
+                            <p id="notification-customers">Sir/Mam check your value! Please </p>
+                        </div>
+                        <!-- notification part end-->
+                    </div>
+
+                    <div>
+                        <h4 class="text-center p-2">Expenses</h4>
+
+                        <label>Food: <input id="food-cost" type="text" class="expenses1 input-btn"></label> <br>
+                        <label>Rent: <input id="rent-cost" type="text" class="expenses2 input-btn"></label> <br>
+                        <label>Clothes: <input id="clothes-cost" type="text" class="expenses3 input-btn"></label>
+                        <br>
+                        <button class="calculate-btn m-2" onclick="calcBtn()">Calculate</button>
+
+                        <!-- notification part start-->
+                        <div>
+                            <p id="notification-cost">Sir/mam your cost is more then your income</p>
+                        </div>
+                        <!-- notification part end-->
+                    </div>
+
+                    <!-- part total cost and rest of balance -->
+                    <div>
+                        <p class="text-center">Total Expenses: <span id="total-expenses">00</span> </p>
+
+                        <p class="text-center">Balance: <span id="balance-after-cost">00</span></p>
+                    </div>
+
+                    <!-- part of Savings -->
+                    <div>
+                        <label>Save: <input id="saving-perc" type="text" class="input-btn"></label><span
+                            class="p-3">%</span>
+
+                        <button id="saving-btn" class="save-btn">save</button>
+
+                        <p id="notification-percentage">Please check your percentage value</p>
+                        <p class="text-center">Saving Amount: <span id="saving-amount">00</span></p>
+                        <p class="text-center">Remaining Balance: <span id="rem-balance">00</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center">©Rabiul Mannan Sajed 2022 </p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+
+body{
+    background-color: #f6f6f6;
+}
+
+.title-text{
+    color: green;
+font-size: 50px;
+width: bold;
+}
+
+.money-img{
+    height: 550px;
+    width: 390px;
+}
+
+.info-div{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* all p tag */
+p{
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* expenses-input tags */
+
+.expenses1{
+    position: relative;
+    left: 20px;
+}
+.expenses2{
+    position: relative;
+    left: 25px;
+}
+.expenses3{ 
+    position: relative;
+    left: 8px;
+}
+/* design for all input  */
+.input-btn{
+    border-radius: 4px;
+    background-color: #eaeaea;
+    border: 2px solid gray;
+}
+
+/* button */
+.calculate-btn ,.save-btn{
+    background-color: #005282;
+    border: 2px solid #005282;
+    color: #fff;
+    border-radius: 4px;
+}
+.calculate-btn{
+    position: relative;
+    left: 110px;
+}
+
+
+/*  notification part start */
+
+#notification-customers ,#notification-cost,#notification-percentage{
+    color: red;
+    font-size: 27px;
+    font-weight: bold;
+    display: none;
+ }
+/*  notification part end */
+
+/* 
+footer section */
+footer{
+    margin-top: 20px;
+     color: #fff;
+    padding: 50px;
+    background-color: #003b58
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
